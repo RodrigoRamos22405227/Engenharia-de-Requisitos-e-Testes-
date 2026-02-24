@@ -1,9 +1,3 @@
-Requirements v1 — Lab 3 (AMS)
-Scope
-
-Slice: Intake & Discovery
-Variant: 9 — Privacy & Data Retention (GDPR Persona)
-
 EPIC-A — Intake Session & Validation
 REQ-001 — Structured Intake Form
 
@@ -12,13 +6,15 @@ Stakeholder: Transition Lead
 Priority: H
 Variant impact: No
 
-Description:
+Description
+
 The system shall provide a structured intake form containing predefined sections for system inventory, integrations, DR/BCP status, monitoring dashboards, access roles, and support contacts.
 
-Objective:
+Objective
+
 Ensure standardized and complete information capture during transition onboarding.
 
-Acceptance Criteria:
+Acceptance Criteria
 
 The intake form contains all predefined mandatory sections.
 
@@ -33,13 +29,15 @@ Stakeholder: Transition Lead
 Priority: H
 Variant impact: No
 
-Description:
+Description
+
 The system shall validate that all mandatory fields are completed before allowing intake submission.
 
-Objective:
+Objective
+
 Prevent incomplete or invalid transition data.
 
-Acceptance Criteria:
+Acceptance Criteria
 
 Missing mandatory fields are clearly highlighted.
 
@@ -54,13 +52,15 @@ Stakeholder: Infrastructure Owner
 Priority: H
 Variant impact: No
 
-Description:
+Description
+
 The system shall flag missing Disaster Recovery (DR) test documentation during intake validation.
 
-Objective:
+Objective
+
 Reduce transition failures caused by lack of recovery validation.
 
-Acceptance Criteria:
+Acceptance Criteria
 
 DR test date is required.
 
@@ -76,13 +76,15 @@ Stakeholder: Technical Lead
 Priority: H
 Variant impact: No
 
-Description:
+Description
+
 The system shall store references or secure links to all submitted evidence documents.
 
-Objective:
+Objective
+
 Ensure traceability and verifiability of provided documentation.
 
-Acceptance Criteria:
+Acceptance Criteria
 
 Evidence links are stored with timestamp.
 
@@ -97,13 +99,15 @@ Stakeholder: Transition Lead
 Priority: M
 Variant impact: No
 
-Description:
+Description
+
 The system shall reject intake submission if required evidence is older than 30 calendar days.
 
-Objective:
+Objective
+
 Ensure accuracy and freshness of transition data.
 
-Acceptance Criteria:
+Acceptance Criteria
 
 Evidence upload date is validated.
 
@@ -119,13 +123,15 @@ Stakeholder: Privacy Officer
 Priority: H
 Variant impact: Yes
 
-Description:
+Description
+
 The system shall restrict collection of personal data to predefined fields approved by the Privacy Officer.
 
-Objective:
+Objective
+
 Ensure compliance with GDPR data minimization principle.
 
-Acceptance Criteria:
+Acceptance Criteria
 
 Only approved personal data fields are visible.
 
@@ -140,13 +146,15 @@ Stakeholder: Privacy Officer
 Priority: H
 Variant impact: Yes
 
-Description:
+Description
+
 The system shall allow configuration of a retention period (in days) for transition-related personal data.
 
-Objective:
+Objective
+
 Ensure time-bound storage of personal data.
 
-Acceptance Criteria:
+Acceptance Criteria
 
 Retention period is configurable via admin panel.
 
@@ -161,13 +169,15 @@ Stakeholder: Privacy Officer
 Priority: H
 Variant impact: Yes
 
-Description:
+Description
+
 The system shall automatically anonymize personal data after the configured retention period expires.
 
-Objective:
+Objective
+
 Prevent unlawful data retention and ensure GDPR compliance.
 
-Acceptance Criteria:
+Acceptance Criteria
 
 Data older than retention period is anonymized.
 
@@ -183,13 +193,15 @@ Stakeholder: Compliance Officer
 Priority: H
 Variant impact: Yes
 
-Description:
+Description
+
 The system shall maintain an immutable audit log recording all modifications to intake data.
 
-Objective:
+Objective
+
 Ensure accountability and traceability of changes.
 
-Acceptance Criteria:
+Acceptance Criteria
 
 Log records user ID, timestamp, and modified fields.
 
@@ -201,29 +213,35 @@ Non-Functional Requirements (NFR)
 NFR-001 — Performance (Measurable)
 
 The system shall respond within ≤ 2 seconds for 95% of requests under normal load (≤ 100 concurrent users), measured via application performance monitoring logs.
+
 Variant impact: No
 
 NFR-002 — Availability (Measurable)
 
 The system shall maintain ≥ 99% monthly uptime, excluding scheduled maintenance, measured via uptime monitoring service.
+
 Variant impact: No
 
 NFR-003 — Encryption at Rest (Measurable, GDPR)
 
 The system shall encrypt all stored personal data using AES-256 encryption, verified through infrastructure security audit.
+
 Variant impact: Yes
 
 NFR-004 — Audit Log Retention (Measurable, GDPR)
 
 Audit logs shall be retained for 12 months before secure archival, verified through system log retention configuration.
+
 Variant impact: Yes
 
 NFR-005 — Retention Enforcement Timing (Measurable, GDPR)
 
 Personal data shall be anonymized within 24 hours after retention period expiry, verified through automated retention job logs.
+
 Variant impact: Yes
 
 NFR-006 — Role-Based Access Control
 
 The system shall enforce RBAC ensuring only authorized roles can view, modify, or delete intake data.
+
 Variant impact: Yes

@@ -1,4 +1,0 @@
-Variant number: 9
-Primary persona: Privacy Officer / Legal
-Key constraint focus: GDPR-style retention and minimization
-Mandatory slice: Intake & Discovery

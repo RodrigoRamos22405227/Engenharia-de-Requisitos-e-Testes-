@@ -5,7 +5,10 @@
 - Primary persona: Privacy Officer / Legal
 - Key constraint focus: GDPR-style retention and minimization
 - Mandatory slice: Intake & Discovery
-- Notes / clarifications:
+- Notes / clarifications: 
+Data capture + validation
+Missing information handling
+Evidence/consistency checks
 
 Facilitator (keeps time and focus) - Luis Almoster
 Scribe (updates GitBook/docs) - Rodrigo Ramos

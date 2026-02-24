@@ -1,11 +1,11 @@
 # Vision 
 
-
 The system supports the Intake & Discovery slice by enabling structured data capture, validation, and evidence consistency checks while strictly enforcing GDPR-aligned data minimization and retention principles. It ensures that only necessary personal data is collected, processed, and retained, allowing the organization to determine whether a case is “Ready to Proceed” or “Need More Information” in a compliant and controlled manner.
 
-Variant 9 
-
-
+- Variant number: 9
+- Primary persona: Privacy Officer / Legal
+- Key constraint focus: GDPR-style retention and minimization
+- Mandatory slice: Intake & Discovery
 
 # Objectives
 Ensure personal data is collected only when strictly necessary (data minimization principle).

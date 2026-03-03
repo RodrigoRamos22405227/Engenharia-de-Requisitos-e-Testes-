@@ -236,7 +236,7 @@ Variant impact: Yes
 
 NFR-005 — Retention Enforcement Timing (Measurable, GDPR)
 
-Personal data shall be anonymized within 24 hours after retention period expiry, verified through automated retention job logs.
+Personal data shall be anonymized within 48 hours after retention period expiry, verified through automated retention job logs.
 
 Variant impact: Yes
 

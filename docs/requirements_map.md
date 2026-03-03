@@ -26,4 +26,20 @@ NFR-002
 NFR-003  
 NFR-004  
 NFR-005  
-NFR-006  
+NFR-006 
+---
+## Variant coverage summary (required)
+
+Variant number: <colocar o número real do vosso grupo>
+
+Variant-driven requirements:
+REQ-006
+REQ-007
+REQ-008
+REQ-009
+
+Variant-driven NFRs:
+NFR-003
+NFR-004
+NFR-005
+NFR-006

@@ -30,7 +30,7 @@ NFR-006
 ---
 ## Variant coverage summary (required)
 
-Variant number: <colocar o número real do vosso grupo>
+Variant number: 9
 
 Variant-driven requirements:
 REQ-006

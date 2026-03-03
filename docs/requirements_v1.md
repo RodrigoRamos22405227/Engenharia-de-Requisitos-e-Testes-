@@ -212,13 +212,13 @@ Logs are searchable by user and date.
 Non-Functional Requirements (NFR)
 NFR-001 — Performance (Measurable)
 
-The system shall respond within ≤ 2 seconds for 95% of requests under normal load (≤ 100 concurrent users), measured via application performance monitoring logs.
+The system shall process critical transactions with a response time of <= 300ms for 99% of requests under peak load conditions (<= 500 concurrent users), validated via real-time infrastructure monitoring reports.
 
 Variant impact: No
 
 NFR-002 — Availability (Measurable)
 
-The system shall maintain ≥ 99% monthly uptime, excluding scheduled maintenance, measured via uptime monitoring service.
+The system shall maintain >= 99% annual uptime, ensuring that unplanned downtime does not exceed 10 hours per year, measured via external health-check monitoring services. 
 
 Variant impact: No
 

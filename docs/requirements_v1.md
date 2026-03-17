@@ -1,4 +1,4 @@
-## EPIC-A — Intake Session & Validation
+## EPIC-1 — Intake Session & Validation
 ### REQ-001 — Structured Intake Form
 
 - Type: FR
@@ -68,7 +68,7 @@ If no DR evidence is attached, the system flags the submission.
 
 Transition cannot proceed without DR evidence.
 
-## EPIC-B — Evidence & Traceability
+## EPIC-2 — Evidence & Traceability
 ### REQ-005 — Evidence Reference Storage
 
 - Type: FR
@@ -115,7 +115,7 @@ Evidence older than 30 days triggers validation error.
 
 System displays reason for rejection.
 
-## EPIC-C — Privacy & Retention (GDPR)
+## EPIC-3 — Privacy & Retention (GDPR)
 ### REQ-006 — Data Minimization Enforcement
 
 - Type: FR
@@ -185,7 +185,7 @@ Anonymization removes personally identifiable fields irreversibly.
 
 An audit log entry is created upon anonymization.
 
-## EPIC-D — Audit & Logging
+## EPIC-4 — Audit & Logging
 ### REQ-009 — Immutable Audit Log
 
 - Type: FR

@@ -10,9 +10,12 @@ Data capture + validation
 Missing information handling
 Evidence/consistency checks
 
-Facilitator (keeps time and focus) - Luis Almoster  
-Scribe (updates GitBook/docs) - Rodrigo Ramos  
-Reviewer (checks quality) - Deyve Silva  
-Tester (makes sure tests run) - Cristiano Sandu  
+Facilitator (keeps time and focus) - Deyve Silva
+
+Scribe (updates GitBook/docs) - Cristiano Sandu
+
+Reviewer (checks quality) - Luís Almoster
+
+Tester (makes sure tests run) - Rodrigo Ramos 
 
 Link do Trello: https://trello.com/b/ctNdGLwu/meu-quadro-do-trello

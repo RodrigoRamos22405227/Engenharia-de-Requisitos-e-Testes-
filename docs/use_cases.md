@@ -28,7 +28,7 @@ E2. **Database Timeout** → If the database fails to respond during Step 6, the
 
 ---
 
-## UC-03 — Evaluate intake readiness
+## UC-02 — Evaluate intake readiness
 - **Primary actor:** Transition Lead
 - **Supporting actors:** None
 - **Goal:** To automatically evaluate if all submitted intake data and evidence meet the business rules to proceed to the transition phase.

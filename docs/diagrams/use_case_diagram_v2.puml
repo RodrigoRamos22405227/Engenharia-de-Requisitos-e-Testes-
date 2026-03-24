@@ -1,1 +1,36 @@
+@startuml
+left to right direction
+skinparam packageStyle rectangle
 
+actor "Transition Lead" as TL
+actor "Privacy Officer" as PO
+actor "Legal Representative" as LR
+actor "Cron Scheduler" as Timer <<External System>>
+
+rectangle "AMS Intake Platform" {
+  usecase "Register stakeholder details" as UC1
+  usecase "Upload authorization evidence" as UC2
+  usecase "Evaluate intake readiness" as UC3
+  usecase "Generate discovery deficit report" as UC4
+  usecase "Access sensitive evidence" as UC5
+  usecase "Purge abandoned intake sessions" as UC6
+  usecase "Verify stakeholder authority" as UC7
+}
+
+TL --> UC1
+TL --> UC2
+TL --> UC3
+TL --> UC5
+
+PO --> UC5
+LR --> UC2
+Timer --> UC6
+
+' Relationships
+UC3 ..> UC7 : <<include>>
+UC3 <.. UC4 : <<extend>> (if missing data)
+
+' Notes for Variant 9
+note right of UC1 : Minimal Data:\nCorporate Email & Role
+note right of UC6 : GDPR Rule:\nHard-delete after 30 days
+@enduml

@@ -1,14 +1,14 @@
 # Acceptance Criteria — Lab 7
 
 ## REQ-001 — Restrict Stakeholder Data Collection (Given/When/Then)
-- **Given** a user is filling out the "Add Stakeholder" form
-- **When** the user attempts to enter a string matching a phone number format (e.g., "+351 912 345 678") into the email or role field
+- **Given** a user is filling out the "Add Stakeholder" form.
+- **When** the user attempts to enter a string matching a phone number format (e.g., "+351 912 345 678") into the email or role field.
 - **Then** the system immediately displays a GDPR validation error ("Personal phone numbers are prohibited") and disables the submit button.
 - **AC-Variant:** The database schema for `Stakeholder` shall not contain columns for `FirstName`, `LastName`, or `PhoneNumber`.
 
 ## REQ-002 — Automated 30-Day Purge for Abandoned Sessions (Given/When/Then)
-- **Given** an Intake Session has a `last_activity_date` exactly 30 days in the past
-- **When** the nightly midnight Cron Scheduler job executes
+- **Given** an Intake Session has a `last_activity_date` exactly 30 days in the past.
+- **When** the nightly midnight Cron Scheduler job executes.
 - **Then** the session record and all associated PII and uploaded files are permanently hard-deleted from the database and storage.
 - **AC-Variant:** The system logs a generic "Session Purged" metric for statistical purposes, containing zero identifiable user data.
 

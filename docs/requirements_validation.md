@@ -27,13 +27,13 @@
 - **Status:** Needs rewrite
 - **Issues found:** The requirement says "reject phone numbers", but doesn't specify what happens if an email contains numbers (e.g., `joao123@gmail.com`).
 - **Proposed fix (clarify):** Update AC to specify that regex should only block standard phone number *formats*, not all numerical characters.
-- **Expected evidence (how to verify):** Demo / Automated UI Test
+- **Expected evidence (how to verify):** Demo / Automated UI Test.
 
 ### REQ-002 — Automated 30-Day Purge for Abandoned Sessions
 - **Status:** Valid
 - **Issues found:** Missing explicit definition of what constitutes "activity" to reset the 30-day timer.
 - **Proposed fix (split/clarify):** Define "activity" as any form save or document upload. Page views do not reset the timer.
-- **Expected evidence (how to verify):** Automated Integration Test (Time-travel simulation)
+- **Expected evidence (how to verify):** Automated Integration Test (Time-travel simulation).
 
 ### REQ-003 — Immutable Audit Trail for Sensitive Evidence
 - **Status:** Valid
@@ -45,7 +45,7 @@
 - **Status:** Valid
 - **Issues found:** "Need More Data" status could be permanent if the client abandons it. (Conflict with REQ-002 discovered).
 - **Proposed fix (clarify):** Ensure REQ-004 acknowledges that "Need More Data" sessions are subject to the 30-day purge rule.
-- **Expected evidence (how to verify):** Unit Testing (Decision Logic)
+- **Expected evidence (how to verify):** Unit Testing (Decision Logic).
 
 ### REQ-005 — Discovery Deficit Reporting
 - **Status:** Needs rewrite

@@ -19,4 +19,4 @@
 - **UC-06:** Purge abandoned intake sessions
 
 ## Diagram file
-- **Path:** `docs/diagrams/use_case_diagram.puml`
+- **Path:** `docs/diagrams/Activity Diagram1.png`
